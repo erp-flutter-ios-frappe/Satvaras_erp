@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include satvaras_erp *.css
+recursive-include satvaras_erp *.csv
+recursive-include satvaras_erp *.html
+recursive-include satvaras_erp *.ico
+recursive-include satvaras_erp *.js
+recursive-include satvaras_erp *.json
+recursive-include satvaras_erp *.md
+recursive-include satvaras_erp *.png
+recursive-include satvaras_erp *.py
+recursive-include satvaras_erp *.svg
+recursive-include satvaras_erp *.txt
+recursive-exclude satvaras_erp *.pyc
