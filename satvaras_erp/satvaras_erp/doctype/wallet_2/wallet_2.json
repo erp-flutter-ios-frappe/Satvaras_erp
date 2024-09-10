@@ -1,0 +1,166 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-09-09 22:00:26.322147",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "customer_name",
+  "transaction_date",
+  "payable_amount",
+  "wallet_balance",
+  "payment_type",
+  "payment_method",
+  "share_from_number",
+  "share_from_name",
+  "share_to_number",
+  "share_to_name",
+  "payment_id",
+  "sales_order",
+  "old_erp_reference",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "customer_name"
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "label": "transaction_date"
+  },
+  {
+   "fieldname": "payable_amount",
+   "fieldtype": "Currency",
+   "label": "payable_amount"
+  },
+  {
+   "fieldname": "wallet_balance",
+   "fieldtype": "Currency",
+   "label": "wallet_balance"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "payment_type",
+   "options": "Payment\nShare Wallet In\nShare Wallet Out\nReward"
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Select",
+   "label": "payment_method",
+   "options": "Cash\nOnline Razor\nRewarded Amount\nTransfer\nDiscount\nPaytm\nPaytmPending\nWallet"
+  },
+  {
+   "fieldname": "share_from_number",
+   "fieldtype": "Data",
+   "label": "share_from_number"
+  },
+  {
+   "fieldname": "share_from_name",
+   "fieldtype": "Data",
+   "label": "share_from_name"
+  },
+  {
+   "fieldname": "share_to_number",
+   "fieldtype": "Data",
+   "label": "share_to_number"
+  },
+  {
+   "fieldname": "share_to_name",
+   "fieldtype": "Data",
+   "label": "share_to_name"
+  },
+  {
+   "fieldname": "payment_id",
+   "fieldtype": "Data",
+   "label": "payment_id"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Data",
+   "label": "sales_order"
+  },
+  {
+   "fieldname": "old_erp_reference",
+   "fieldtype": "Data",
+   "label": "Old ERP Reference"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Wallet_2",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-09 22:00:26.322147",
+ "modified_by": "Administrator",
+ "module": "Satvaras_erp",
+ "name": "Wallet_2",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
